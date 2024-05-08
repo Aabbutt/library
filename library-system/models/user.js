@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true },
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  checked_out_books: [
+    {
+      copy_id: { type: String, required: true },
+      due_date: { type: Date, required: true }
+    }
+  ]
+});
+
+module.exports = mongoose.model('User', userSchema);

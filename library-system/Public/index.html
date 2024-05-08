@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Library System</h1>
+            <p>Explore and manage books, users, and librarians.</p>
+        </header>
+
+        <!-- Section to display Books -->
+        <section id="books-section">
+            <h2>Books</h2>
+            <div id="book-list">
+                <!-- Book items will be dynamically loaded here -->
+                <!-- Example book item:
+                <div class="book-item">
+                    <h3>Title: <span class="book-title">Book Title</span></h3>
+                    <p>Author: <span class="book-author">Author Name</span></p>
+                    <p>ISBN: <span class="book-isbn">1234567890</span></p>
+                </div>
+                -->
+            </div>
+
+            <!-- Form to add a new book -->
+            <form id="add-book-form">
+                <h3>Add New Book</h3>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required><br>
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" required><br>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Section to display Users -->
+        <section id="users-section">
+            <h2>Users</h2>
+            <div id="user-list">
+                <!-- User items will be dynamically loaded here -->
+                <!-- Example user item:
+                <div class="user-item">
+                    <h3>Username: <span class="user-username">username123</span></h3>
+                    <p>Name: <span class="user-name">John Doe</span></p>
+                    <p>Email: <span class="user-email">john@example.com</span></p>
+                </div>
+                -->
+            </div>
+
+            <!-- Form to add a new user -->
+            <form id="add-user-form">
+                <h3>Add New User</h3>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <button type="submit">Add User</button>
+            </form>
+        </section>
+
+        <!-- Section to display Librarians -->
+        <section id="librarians-section">
+            <h2>Librarians</h2>
+            <div id="librarian-list">
+                <!-- Librarian items will be dynamically loaded here -->
+                <!-- Example librarian item:
+                <div class="librarian-item">
+                    <h3>Username: <span class="librarian-username">librarian123</span></h3>
+                    <p>Name: <span class="librarian-name">Jane Doe</span></p>
+                    <p>Email: <span class="librarian-email">jane@example.com</span></p>
+                </div>
+                -->
+            </div>
+
+            <!-- Form to add a new librarian -->
+            <form id="add-librarian-form">
+                <h3>Add New Librarian</h3>
+                <label for="librarian-username">Username:</label>
+                <input type="text" id="librarian-username" name="librarian-username" required><br>
+                <label for="librarian-name">Name:</label>
+                <input type="text" id="librarian-name" name="librarian-name" required><br>
+                <label for="librarian-email">Email:</label>
+                <input type="email" id="librarian-email" name="librarian-email" required><br>
+                <button type="submit">Add Librarian</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Library System</p>
+        </footer>
+    </div>
+
+    <!-- External JavaScript file for client-side functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>
